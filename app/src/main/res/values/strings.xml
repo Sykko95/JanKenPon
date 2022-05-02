@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JanKenPon</string>
+    <string name="action">Escolha uma opção abaixo</string>
+    <string name="app_choice">Escolha do app</string>
+    <string name="app_choice_desc">Imagem escolha do app</string>
+    <string name="rock_img_desc">Imagem pedra</string>
+    <string name="paper_img_desc">Imagem papel</string>
+    <string name="scissor_img_desc">Imagem tesoura</string>
+    <string name="win">Você venceu!</string>
+    <string name="lose">Você perdeu :(</string>
+    <string name="draw">Empate :o</string>
+</resources>

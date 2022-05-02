@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/app_choice"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/appChoiceImg"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/app_choice_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appChoice"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/actionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/action"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appChoiceImg" />
+
+    <ImageView
+        android:id="@+id/rockImg"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:clickable="true"
+        android:contentDescription="@string/rock_img_desc"
+        android:focusable="true"
+        android:onClick="chooseRock"
+        app:layout_constraintBottom_toBottomOf="@+id/paperImg"
+        app:layout_constraintEnd_toStartOf="@+id/paperImg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paperImg"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/paperImg"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:clickable="true"
+        android:contentDescription="@string/paper_img_desc"
+        android:focusable="true"
+        android:onClick="choosePaper"
+        app:layout_constraintBottom_toBottomOf="@+id/scissorImg"
+        app:layout_constraintEnd_toStartOf="@+id/scissorImg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rockImg"
+        app:layout_constraintTop_toTopOf="@+id/scissorImg"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/scissorImg"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:contentDescription="@string/scissor_img_desc"
+        android:focusable="true"
+        android:onClick="chooseScissor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/paperImg"
+        app:layout_constraintTop_toBottomOf="@+id/actionText"
+        app:srcCompat="@drawable/tesoura" />
+</androidx.constraintlayout.widget.ConstraintLayout>
